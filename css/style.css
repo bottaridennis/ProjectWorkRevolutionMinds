@@ -16,15 +16,20 @@
     --second-bg-color: #421652;
     --text-color: #ededed;
     --main-color: #BE75FF; */
-    --bg-color: #003547;
+    /* --bg-color2: #0e3e4d; */
+    /* --bg-color: #003547;
     --second-bg-color: #00506b;
     --text-color: #EE8B16;
-    --main-color: #E0523C;
+    --main-color: #E0523C; */
     /* repush */
     /* --bg-color: #081b29;
     --second-bg-color: #112e42;
     --text-color: #ededed;
     --main-color: #00abf0; */
+    --bg-color: #14261A;
+    --second-bg-color: #44593A;
+    --text-color: #ededed;
+    --main-color: #A5A26D;
 
     /* --main-color: #c294d4; */
 }
@@ -45,7 +50,7 @@ body {
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background: transparent;
+    background: var(--bg-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -947,7 +952,7 @@ span {
         opacity: 0;
     }
 }
-
+ /* front page title */
 @keyframes aboutSpinner {
     100% {
         transform: translate(-50%, -50%) rotate(360deg);
@@ -959,3 +964,54 @@ span {
         width: 0;
     }
 }
+
+
+
+
+
+
+
+/* codepen  */
+@import url('https://fonts.googleapis.com/css?family=Cairo');
+
+.title {
+  font-family: "Cairo";
+  text-align: center;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+  letter-spacing: 1px;
+  /* line-height:2; */
+}
+#SeconHand {
+  background-image: url(https://media.giphy.com/media/3oz8xDtMk9Qcha8MJq/giphy.gif?cid=790b76110eljr3mqm97n1x51s3vm2gh5iv4ygyuy67wz54te&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  /* font-size: 120px; */
+  margin: 10px 0;
+}
+/* styling my button */
+
+/* .white-mode {
+  text-decoration: none;
+  padding: 7px 10px;
+  background-color: #122;
+  border-radius: 3px;
+  color: #FFF;
+  transition: .35s ease-in-out;
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  font-family: "Montserrat";
+} */
+
+/* .white-mode:hover {
+  background-color: #FFF;
+  color: #122;
+} */
