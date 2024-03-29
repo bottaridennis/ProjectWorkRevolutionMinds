@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bottari Dennis</title>
+    <link rel="shortcut icon" href="/images/colorLogo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo"><img src="./images/Logo.png" alt="" style="height: 6rem;">Revolution Minds<span
+                class="animate" style="--i:1;"></span></a>
+
+        <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2;"></span></div>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#form">Form</a>
+            <a href="#"></a>
+            <a href="#"></a>
+
+            <span class="active-nav"></span>
+            <span class="animate" style="--i:2;"></span>
+        </nav>
+    </header>
+    <!-- home section design -->
+    <section class="home show-animate" id="home">
+        <div class="home-content">
+            <h1>Ciao, siamo i <span>Revolution Minds</span><span class="animate" style="--i:2;"></span></h1>
+            <div class="text-animate">
+                <h3>WIP Group</h3>
+                <span class="animate" style="--i:3;"></span>
+            </div>
+            <p>
+            </p>
+            <div class="btn-box">
+                <a href="CV.pdf" onclick='confirmAction()' class="btn" download="">Idea</a>
+                <a href="" class="btn">Contattaci</a>
+                <span class="animate" style="--i:5;"></span>
+            </div>
+        </div>
+
+        <div class="home-sci">
+            <a href="https://github.com/"><i class='bx bxl-github'></i></a>
+            <a href="mailto:dennisbottari@gmail.com?subject=Contattami"><i class='bx bxl-gmail'></i></a>
+            <a href="https://www.linkedin.com/in/dennis-bottari-708400241/"><i class='bx bxl-facebook'></i></a>
+            <span class="animate" style="--i:6;"></span>
+        </div>
+
+        <div class="home-imgHover"></div>
+        <span class="animate home-img" style="--i:7;"></span>
+    </section>
+    <!-- about section design -->
+    <section class="about" id="about">
+        <h2 class="heading">About our <span>Project</span></h2>
+
+        <div class="about-img">
+            <img src="/images/earth.jpg" alt="">
+            <span class="circle-spin"></span>
+        </div>
+
+        <div class="about-content">
+            <h3></h3>
+            <p></p>
+            <div class="btn-box btns">
+                <a href="#" class="btn">Read more</a>
+            </div>
+        </div>
+    </section>
+    <!-- education section design -->
+    <!-- <section class="education" id="education">
+        <h2 class="heading">La mia <span>Istruzione</span></h2>
+
+        <div class="education-row">
+            <div class="education-column">
+                <h3 class="title">Educazione</h3>
+
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i>2017 - 2020 | ISTITUTO SALESIANO SAN ZENO
+                            </div>
+                            <h3>Qualifica professionale per Operatore elettrico</h3>
+                            <p>Elettrotecnica, Sistemi, Tecniche e progettazione di sistemi elettrici</p>
+                        </div>
+                    </div>
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i>2020 - 2023 | ISTITUTO SALESIANO SAN ZENO
+                            </div>
+                            <h3>Qualifica professionale per Operatore elettrico</h3>
+                            <p>Elettrotecnica, Sistemi, Tecniche e progettazione di sistemi elettrici</p>
+                        </div>
+                    </div>
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> 2023 - IN CORSO | ITS ACADEMY LAST</div>
+                            <h3>Qualifica di web development</h3>
+                            <p>HTML, CSS, JS, Graphic design, UX, UI, php</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="education-column">
+                <h3 class="title">Esperienza</h3>
+
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> MAGGIO - GIUGNO 2022 | ELETTROSYSTEM</div>
+                            <h3>Operatore elettrico presso Elettrosystem di Daniele Pellini a Oppeano</h3>
+                            <p>Operaio(stagista)</p>
+                        </div>
+                    </div>
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> GIUGNO - LUGLIO 2023 | ELETTROSYSTEM</div>
+                            <h3>Operatore elettrico presso Elettrosystem di Daniele Pellini a Oppeano</h3>
+                            <p>Operaio(stagista)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section> -->
+    <!-- skills section design -->
+    <!-- <section class="skills" id="skills">
+        <h2 class="heading">Le mie <span>Skills</span></h2>
+
+        <div class="skills-row">
+            <div class="skills-column">
+                <h3 class="title">Coding skills</h3>
+
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>HTML <span>90%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>CSS <span>80%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>php <span>75%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>JavaScript <span>60%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Python <span>60%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="skills-column">
+                <h3 class="title">Professional skills</h3>
+
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>Graphic design <span>95%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>UI <span>70%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>UX <span>75%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Web development <span>75%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Web design <span>70%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-column">
+                <h3 class="title">Musical skills</h3>
+
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>Chitarra <span>75%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Canto <span>70%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Ukulele <span>60%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-column">
+                <h3 class="title">Artistic skills</h3>
+
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>Animazione 3D <span>40%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Disegno 3D <span>50%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Animazione 2D <span>65%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Disegno 2D <span>80%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Disegno vettoriale <span>90%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- contact section design -->
+    <!-- <section class="contact" id="contact">
+        <h2 class="heading">Contattami <span>!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Nome e Cognome" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Indirizzo Email" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Numero di telefono" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Oggetto Email" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+
+            <div class="textarea-field">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Messaggio" required></textarea>
+                <span class="focus"></span>
+            </div>
+            <div class="btn-box btns">
+                <button type="submit" class="btn">Invia</button>
+            </div>
+        </form>
+    </section> -->
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Made by Dennis Bottari, Yasmine Giuliani, Matteo Leto, Fabian Dumea e Diego Milli</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <!-- repush -->
+</body>
+
+</html>
