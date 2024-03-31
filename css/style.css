@@ -22,14 +22,14 @@
     --text-color: #EE8B16;
     --main-color: #E0523C; */
     /* repush */
-    /* --bg-color: #081b29;
+    --bg-color: #081b29;
     --second-bg-color: #112e42;
     --text-color: #ededed;
-    --main-color: #00abf0; */
-    --bg-color: #14261A;
+    --main-color: #00abf0;
+    /* --bg-color: #14261A;
     --second-bg-color: #44593A;
     --text-color: #ededed;
-    --main-color: #A5A26D;
+    --main-color: #A5A26D; */
 
     /* --main-color: #c294d4; */
 }
@@ -69,7 +69,7 @@ body {
     font-weight: 600;
 }
 
-.logo img{
+.logo img {
     position: relative;
 }
 
@@ -272,19 +272,27 @@ section {
 }
 
 .home-imgHover {
+
     position: absolute;
-    top: 0;
+    top: 10rem;
     right: 0;
     width: 45%;
     height: 100%;
-    background: transparent;
-    transition: 3s;
+    /* transition: 3s; */
+    /* background-color: linear-gradient(black, transparent); */
+    z-index: 2;
 }
 
-.home-imgHover:hover {
+/* .home-imgHover video {z-index: -1;} */
+
+.gradient {
+    background-color: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 100%);
+}
+
+/* .home-imgHover:hover {
     background: var(--bg-color);
     opacity: .8;
-}
+} */
 
 .about {
     display: flex;
@@ -753,7 +761,17 @@ span {
     }
 } */
 
+@media (max-width:1300px) {
+    .home-imgHover {
+        display: none;
+    }
+}
+
 @media (max-width:1200px) {
+    .home-imgHover {
+        display: none;
+    }
+
     .education-column {
         width: 100%;
     }
@@ -764,6 +782,16 @@ span {
 }
 
 @media (max-width:991px) {
+    .home-imgHover {
+        display: none;
+    }
+
+    .home {
+        margin-top: 4rem;
+        display: flex;
+        justify-content: center;
+    }
+
     .education-column {
         width: 100%;
     }
@@ -859,6 +887,7 @@ span {
     .education-column {
         width: 100%;
     }
+
     html {
         font-size: 50%;
     }
@@ -879,6 +908,10 @@ span {
 }
 
 @media (max-width: 462px) {
+    .home {
+        justify-content: center;
+    }
+
     .home-content h1 {
         font-size: 5.2rem;
     }
@@ -952,7 +985,8 @@ span {
         opacity: 0;
     }
 }
- /* front page title */
+
+/* front page title */
 @keyframes aboutSpinner {
     100% {
         transform: translate(-50%, -50%) rotate(360deg);
@@ -975,27 +1009,29 @@ span {
 @import url('https://fonts.googleapis.com/css?family=Cairo');
 
 .title {
-  font-family: "Cairo";
-  text-align: center;
-  color: #FFF;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  /* height: 100vh; */
-  letter-spacing: 1px;
-  /* line-height:2; */
+    font-family: "Cairo";
+    text-align: center;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    letter-spacing: 1px;
+    /* line-height:2; */
 }
+
 #SeconHand {
-  background-image: url(https://media.giphy.com/media/3oz8xDtMk9Qcha8MJq/giphy.gif?cid=790b76110eljr3mqm97n1x51s3vm2gh5iv4ygyuy67wz54te&ep=v1_gifs_search&rid=giphy.gif&ct=g);
-  background-size: cover;
-  color: transparent;
-  -moz-background-clip: text;
-  -webkit-background-clip: text;
-  text-transform: uppercase;
-  /* font-size: 120px; */
-  margin: 10px 0;
+    margin-left: 2rem;
+    background-image: url(https://media.giphy.com/media/3oz8xDtMk9Qcha8MJq/giphy.gif?cid=790b76110eljr3mqm97n1x51s3vm2gh5iv4ygyuy67wz54te&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    /* font-size: 120px; */
 }
+
 /* styling my button */
 
 /* .white-mode {
