@@ -34,10 +34,46 @@
     <!-- negozi che si vogliono aggiungere -->
     <section class="contact" id="negozi">
 
-        <!-- form per i negozi -->
         <h2 class="heading">AGGIUNGI IL TUO NEGOZIO<span>!</span></h2>
 
-        <form action="contact.php" method="POST">
+        <form action="negozi.php" method="POST">
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Nome del negozio" name="shopName" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Via" name="address" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Numero civico" name="shopNumber" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Città" name="city" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+
+            <div class="textarea-field">
+                <textarea id="" cols="30" rows="10" placeholder="Descrizione" name="description" required></textarea>
+                <span class="focus"></span>
+            </div>
+            <div class="btn-box btns">
+                <button type="submit" class="btn">Invia</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- negozi che si vogliono aggiungere -->
+    <section class="contact" id="negozi">
+
+        <h2 class="heading">AGGIUNGI IL TUO NEGOZIO<span>!</span></h2>
+
+        <form action="negozi.php" method="POST">
             <div class="input-box">
                 <div class="input-field">
                     <input type="text" placeholder="Nome del negozio" name="shopName" required>

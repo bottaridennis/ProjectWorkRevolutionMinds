@@ -21,14 +21,14 @@
 
         //variabili che salvano i dati dei campi del form
         $name = $_POST["shopName"];
-        $place = $_POST["place"];
         $address = $_POST["address"];
+        $shopNumber = $_POST["shopNumber"];
         $city = $_POST["city"];
-        $message = $_POST["message"];
+        $description = $_POST["description"];
 
         //query che inserisce i dati nel database
-        $query_sql = "INSERT INTO negozi (shopName, place, shopAddress, city, shopMessage)
-                    VALUES ('$name', '$place', '$address' ,'$city', '$message');";
+        $query_sql = "INSERT INTO negozi (shopName, shopAddress, shopNumber, city, shopDescription)
+                    VALUES ('$name', '$address', '$shopNumber', '$city', '$description');";
         
         //eseguo la query
         $result = $conn->query($query_sql);
