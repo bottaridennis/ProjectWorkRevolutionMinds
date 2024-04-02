@@ -3,8 +3,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revolution Minds</title>
-    <link rel="shortcut icon" href="/images/Logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="./images/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
 
     <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -31,10 +31,11 @@
         </nav>
     </header>
 
-    <section class="contact" id="contact">
+    <!-- negozi che si vogliono aggiungere -->
+    <section class="contact" id="negozi">
 
         <!-- form per i negozi -->
-        <h2 class="heading">AGGIUNGI IL TUO NEGOZI<span>!</span></h2>
+        <h2 class="heading">AGGIUNGI IL TUO NEGOZIO<span>!</span></h2>
 
         <form action="contact.php" method="POST">
             <div class="input-box">
@@ -49,7 +50,7 @@
             </div>
             <div class="input-box">
                 <div class="input-field">
-                    <input type="text" placeholder="Via" name="strett" required>
+                    <input type="text" placeholder="Via" name="address" required>
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
@@ -59,7 +60,7 @@
             </div>
 
             <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Messaggio" name="message" required></textarea>
+                <textarea id="" cols="30" rows="10" placeholder="Messaggio" name="message" required></textarea>
                 <span class="focus"></span>
             </div>
             <div class="btn-box btns">
