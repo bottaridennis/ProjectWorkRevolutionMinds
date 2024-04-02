@@ -32,32 +32,34 @@
     </header>
 
     <section class="contact" id="contact">
-        <h2 class="heading">Contattaci <span>!</span></h2>
 
-        <form action="">
+        <!-- form per i negozi -->
+        <h2 class="heading">AGGIUNGI IL TUO NEGOZI<span>!</span></h2>
+
+        <form action="contact.php" method="POST">
             <div class="input-box">
                 <div class="input-field">
-                    <input type="text" placeholder="Nome e Cognome" required>
+                    <input type="text" placeholder="Nome del negozio" name="shopName" required>
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Indirizzo Email" required>
+                    <input type="text" placeholder="Sede" name="place" required>
                     <span class="focus"></span>
                 </div>
             </div>
             <div class="input-box">
                 <div class="input-field">
-                    <input type="text" placeholder="Numero di telefono" required>
+                    <input type="text" placeholder="Via" name="strett" required>
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Oggetto Email" required>
+                    <input type="text" placeholder="Città" name="city" required>
                     <span class="focus"></span>
                 </div>
             </div>
 
             <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Messaggio" required></textarea>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Messaggio" name="message" required></textarea>
                 <span class="focus"></span>
             </div>
             <div class="btn-box btns">

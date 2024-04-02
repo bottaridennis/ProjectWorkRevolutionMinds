@@ -24,15 +24,20 @@
     --text-color: #EE8B16;
     --main-color: #E0523C; */
     
-    --bg-color: #081b29;
+    /* --bg-color: #081b29;
     --second-bg-color: #112e42;
     --text-color: #ededed;
-    --main-color: #E0523C;
+    --main-color: #E0523C; */
 
     /* --bg-color: #14261A;
     --second-bg-color: #44593A;
     --text-color: #ededed;
     --main-color: #A5A26D; */
+
+    --bg-color: #225229;
+    --second-bg-color: #226131;
+    --text-color: #80BF8A;
+    --main-color: rgb(2, 179, 179);
 
     /* --main-color: #c294d4; */
 }
@@ -40,6 +45,7 @@
 html {
     font-size: 62.5%;
     /* overflow: hidden; */
+
 }
 
 body {
@@ -1027,7 +1033,7 @@ span {
 
 #SeconHand {
     margin-left: 2rem;
-    background-image: url(https://media.giphy.com/media/3oz8xDtMk9Qcha8MJq/giphy.gif?cid=790b76110eljr3mqm97n1x51s3vm2gh5iv4ygyuy67wz54te&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+    background-image: url(https://media.giphy.com/media/a9egkjDwv7QIZQCVnV/giphy.gif?cid=790b7611g1lxnngf6b0vt7bsdt7tfv2j3h0f30a6wfe84loj&ep=v1_gifs_search&rid=giphy.gif&ct=g);
     background-size: cover;
     color: transparent;
     -moz-background-clip: text;
@@ -1055,3 +1061,7 @@ span {
   background-color: #FFF;
   color: #122;
 } */
+
+.color2 { 
+    color: #2672B5;
+}
