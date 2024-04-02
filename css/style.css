@@ -36,7 +36,7 @@
 
     --bg-color: #225229;
     --second-bg-color: #226131;
-    --text-color: #80BF8A;
+    --text-color: #9dd6a7;
     --main-color: rgb(2, 179, 179);
 
     /* --main-color: #c294d4; */
@@ -60,6 +60,7 @@ body {
     width: 100%;
     padding: 2rem 9%;
     background: var(--bg-color);
+    border-bottom: var(--second-bg-color) .2rem solid;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -69,6 +70,7 @@ body {
 
 .header.sticky {
     background: var(--bg-color);
+    border-bottom: var(--text-color) .2rem solid;
 }
 
 .logo {
@@ -84,6 +86,7 @@ body {
 
 .navbar {
     position: relative;
+    
 }
 
 .navbar a {
@@ -281,15 +284,17 @@ section {
 }
 
 .home-imgHover{
-    right: 0;
+    right: 2rem;
     position: absolute;
 }
 .home-imgHover video{
-
+    border-top-left-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+    border: var(--text-color) .3rem solid;
     /* position: absolute; */
     top: 10rem;
     right: 0;
-    width: 80%;
+    width: 100%;
     height: 100%;
     float: right;
     /* transition: 3s; */
