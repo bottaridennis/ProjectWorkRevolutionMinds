@@ -27,7 +27,7 @@
         $description = $_POST["description"];
 
         //query che inserisce i dati nel database
-        $query_sql = "INSERT INTO negozi (shopName, shopAddress, shopNumber, city, shopDescription)
+        $query_sql = "INSERT INTO shops (shopName, shopAddress, shopNumber, city, shopDescription)
                     VALUES ('$name', '$address', '$shopNumber', '$city', '$description');";
         
         //eseguo la query
