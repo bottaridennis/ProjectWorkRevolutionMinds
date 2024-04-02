@@ -274,23 +274,24 @@ section {
     width: 100%;
 }
 
-.home-imgHover {
-
+.home-imgHover{
+    right: 0;
     position: absolute;
+}
+.home-imgHover video{
+
+    /* position: absolute; */
     top: 10rem;
     right: 0;
-    width: 45%;
+    width: 80%;
     height: 100%;
+    float: right;
     /* transition: 3s; */
     /* background-color: linear-gradient(black, transparent); */
-    z-index: 2;
+    /* z-index: 2; */
 }
 
 /* .home-imgHover video {z-index: -1;} */
-
-.gradient {
-    background-color: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 100%);
-}
 
 /* .home-imgHover:hover {
     background: var(--bg-color);
