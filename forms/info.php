@@ -6,25 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revolution Minds</title>
-    <link rel="shortcut icon" href="./images/Logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./messageStyle.css">
-
-    <!-- box icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    
+    <?php require_once("head.php"); ?>
 </head>
 
 <body>
     <?php
         // connessione al database
-        // server
-        $conn = new mysqli("localhost", "root", "", "formRevolutionMinds");
-
-        //verifica se la connessione e' andata a buon fine
-        if($conn-> connect_error){
-            die("Connessione fallita: " . $conn->connect_error);
-        }
+        require_once('connection.php');
 
         //variabili che salvano i dati dei campi del form
         $name = $_POST["name"];
