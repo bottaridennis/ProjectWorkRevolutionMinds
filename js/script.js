@@ -55,8 +55,32 @@ const confirmAction = () => {
 }
 
 var map = L.map('map').setView([51.505, -0.09], 13);
+map.panTo(new L.LatLng(45.4383842, 10.9916215));
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
+    maxZoom: 14,
+    minZoom: 14,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
+
+
+// humana vintage verona - piazza pasque veronesi 5a
+var circle = L.circle([51.508, -0.11], {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5,
+    radius: 500
+}).addTo(map);
+
+var polygon = L.polygon([
+    [51.509, -0.08],
+    [51.503, -0.06],
+    [51.51, -0.047]
+]).addTo(map);
+var marker = L.marker([45.439657826025446, 10.989385885567623]).addTo(map);
+var marker = L.marker([45.44638656384127, 10.95347652565059]).addTo(map);
+var marker = L.marker([45.44039041724529, 10.984579039304952]).addTo(map);
+var marker = L.marker([45.43999150837162, 10.989045907006982]).addTo(map);
+var marker = L.marker([45.443433419631745, 11.020246164875502]).addTo(map);
+var marker = L.marker([45.436256585622786, 10.985629985105835]).addTo(map);
+var marker = L.marker([]).addTo(map);
