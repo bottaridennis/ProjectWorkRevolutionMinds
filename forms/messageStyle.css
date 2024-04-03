@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #225229;
+}
+.message{
+    display: flex;
+    justify-content: center;
+    border: solid 0.2rem rgb(2, 179, 179);
+    border-radius: 1.1rem;
+    font-size: 70%;
+    width: 50%;
+    margin: 30% auto;
+}
+
+.message h1{
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1.1rem;
+    color: #80BF8A;
+}

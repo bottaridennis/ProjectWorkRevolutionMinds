@@ -6,6 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revolution Minds</title>
+    <link rel="shortcut icon" href="./images/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./messageStyle.css">
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 
 <body>
@@ -32,12 +39,22 @@
         $result = $conn->query($query_sql);
 
         //controllo se la query è stata eseguita correttamente
-        if($result == TRUE){
-            echo "Richiesta inoltrata con successo";
-        }else{
-            echo "Query non eseguita con successo: $query_sql";
-        }
+        if($result == TRUE):
+            header("refresh:3;url=../contact.html");
+    ?>       
+            <div class="message">
+                <h1>ISCRIZIONE AVVENUTA CON SUCCESSO </h1>
+            </div>
+    <?php
+            exit();
+
+            endif 
     ?>
+    <?php if($result == FALSE): ?>
+        <div class="message">
+            <h1><?php "Query non eseguita con successo: $query_sql";?></h1>
+        </div>
+    <?php endif ?>
 </body>
 
 </html>
