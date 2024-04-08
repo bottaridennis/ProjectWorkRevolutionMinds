@@ -16,9 +16,9 @@
         require_once('connection.php');
 
         //variabili che salvano i dati dei campi del form
-        $name = $_POST["name"];
-        $surname = $_POST["surname"];
-        $mail = $_POST["mail"];
+        $name = filter_var($_POST["name"], FILTER_SANITIZE_STRING);
+        $surname = filter_var($_POST["surname"], FILTER_SANITIZE_STRING);
+        $mail = filter_var($_POST["mail"], FILTER_SANITIZE_EMAIL);
 
         //query che inserisce i dati nel database
         $query_sql = "INSERT INTO newsletter (personName, surname, mail)
