@@ -41,8 +41,8 @@ CREATE TABLE IF NOT EXISTS newsletter(
 );
 
 -- utente che inserisce i dati nel form
--- CREATE USER IF NOT EXISTS 'userForm'@'localhost' IDENTIFIED BY 'password';
--- GRANT INSERT ON formRevolutionMinds.* TO 'userForm'@'localhost';
+CREATE USER IF NOT EXISTS 'userForm'@'localhost' IDENTIFIED BY 'password';
+GRANT INSERT ON formRevolutionMinds.* TO 'userForm'@'localhost';
 
 -- controllo per vedere se l'utente è stato creato
 -- SELECT userForm FROM mysql.user;
