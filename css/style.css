@@ -25,6 +25,17 @@ html {
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    /* overflow-x: hidden; */
+}
+#particles-js{
+    height: 100vh;
+    position: absolute;
+    opacity: .4;
+    position: fixed;
+    /* z-index: 2!important; */
 }
 
 a {
@@ -62,12 +73,12 @@ a {
     position: relative;
 }
 
-.navbar {
+.navbar1 {
     position: relative;
 
 }
 
-.navbar a {
+.navbar1 a {
     font-size: 1.7rem;
     color: var(--text-color);
     font-weight: 500;
@@ -75,8 +86,8 @@ a {
     transition: .3s;
 }
 
-.navbar a:hover,
-.navbar a.active {
+.navbar1 a:hover,
+.navbar1 a.active {
     color: var(--main-color);
 }
 
@@ -102,10 +113,10 @@ section {
 .shopList {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     /* flex-shrink: 1; */
     padding: 0 9%;
-    gap: 1rem 3rem;
+    gap: .4rem 2rem;
     max-width: 100% !important;
     background-color: var(--second-bg-color);
 
@@ -510,6 +521,7 @@ span {
     flex-wrap: wrap;
     padding: 2rem 9%;
     background: var(--bg-color);
+    z-index: 4;
 }
 
 .footer-text p {
@@ -562,7 +574,7 @@ span {
 }
 
 .logo .animate,
-.navbar .animate,
+.navbar1 .animate,
 #menu-icon .animate,
 .home.show-animate .animate {
     animation: showRight 1s ease forwards;
@@ -668,7 +680,7 @@ span {
         display: block;
     }
 
-    .navbar {
+    .navbar1 {
         position: absolute;
         top: 100%;
         left: -100%;
@@ -681,12 +693,12 @@ span {
         transition-delay: .25s;
     }
 
-    .navbar.active {
+    .navbar1.active {
         transition-delay: 0s;
         left: 0;
     }
 
-    .navbar .active-nav {
+    .navbar1 .active-nav {
         position: absolute;
         top: 0;
         left: -100%;
@@ -699,12 +711,12 @@ span {
         transition-delay: 0s;
     }
 
-    .navbar.active .active-nav {
+    .navbar1.active .active-nav {
         left: 0;
         transition-delay: .25s;
     }
 
-    .navbar a {
+    .navbar1 a {
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
@@ -713,7 +725,7 @@ span {
         transition-delay: 0s;
     }
 
-    .navbar.active a {
+    .navbar1.active a {
         transform: translateX(0);
         transition-delay: .25s;
     }
@@ -835,6 +847,9 @@ span {
 }
 
 #map {
-    height: 50rem;
+    height: 60vh;
     z-index: 0;
+}
+#shopList{
+    padding-top: 9rem;
 }

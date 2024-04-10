@@ -1,11 +1,11 @@
 
 
 let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
+let navbar1 = document.querySelector('.navbar1');
 
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
-    navbar.classList.toggle('active');
+    navbar1.classList.toggle('active');
 }
 
 
@@ -36,7 +36,7 @@ window.onscroll = () => {
     header.classList.toggle('sticky', window.scrollY > 100);
 
     menuIcon.classList.remove('bx-x');
-    navbar.classList.remove('active');
+    navbar1.classList.remove('active');
 }
 
 const confirmAction = () => {
