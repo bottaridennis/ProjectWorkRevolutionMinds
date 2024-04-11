@@ -37,12 +37,19 @@ CREATE TABLE IF NOT EXISTS newsletter(
     personName VARCHAR(255) NOT NULL,
     surname VARCHAR(255) NOT NULL,
     mail VARCHAR(255) NOT NULL,
+    -- privacyCheck BOOLEAN NOT NULL,
+    privacyCheck TINYINT(1) NOT NULL,
     PRIMARY KEY(idPerson)
 );
 
 -- utente che inserisce i dati nel form
 CREATE USER IF NOT EXISTS 'userForm'@'localhost' IDENTIFIED BY 'password';
 GRANT INSERT ON formRevolutionMinds.* TO 'userForm'@'localhost';
+
+-- GRANT INSERT ON shops TO ;
+-- GRANT INSERT ON donors TO utenti;
+-- GRANT INSERT ON informations TO utenti;
+-- GRANT INSERT ON newsletter TO utenti;
 
 -- controllo per vedere se l'utente è stato creato
 -- SELECT userForm FROM mysql.user;
