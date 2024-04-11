@@ -22,12 +22,17 @@
     --second-bg-color: #50623A;
     --text-color: #DBE7C9;
     --main-color: #789461; */
-    
-    --bg-color: #34520D;
-    --second-bg-color: #5F794B  ;
+
+    /* --bg-color: #34520D;
+    --second-bg-color: #5F794B;
     --text-color: #EDE7E1;
-    --main-color: #EAC04F;
-    
+    --main-color: #EAC04F; */
+
+    --bg-color: #248BC7;
+    --second-bg-color: #2398D1;
+    --text-color: #FFFFFF;
+    --main-color: #F6DE62;
+
     /* --bg-color: #607942;
     --second-bg-color: #81A862  ;
     --text-color: #EDE7E1;
@@ -50,10 +55,10 @@ body {
 #particles-js {
     height: 100vh;
     position: absolute;
-    opacity: .4;
+    opacity: .6;
     position: fixed;
     max-width: 100%;
-    z-index: 0!important;
+    z-index: 0 !important;
 }
 
 a {
@@ -136,7 +141,7 @@ section {
     padding: 0 9%;
     gap: 3rem 2rem;
     max-width: 100% !important;
-    background-color: var(--second-bg-color);
+    background-color: var(--bg-color);
 
 }
 
@@ -147,7 +152,7 @@ section {
 } */
 
 .card {
-    background-color: var(--bg-color);
+    background-color: var(--second-bg-color);
     display: flex;
     justify-content: center;
     /* align-items: center; */
@@ -167,10 +172,36 @@ section {
 
 .card div h5 {
     color: var(--main-color);
+    font-size: 1.5rem;
 }
 
 .card div p {
-    color: #9dd6a7;
+    color: var(--text-color);
+    font-size: 1.3rem;
+}
+
+.card-img-top{
+    opacity: 1;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.card-img-top:hover{
+    opacity: .5;
+}
+.redirect i{
+    display: none;
+}
+
+.redirect:hover  i{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+    opacity: 1;
+    z-index: 4;
+    color: var(--text-color);
 }
 
 .home-content {
@@ -195,6 +226,7 @@ section {
 .home-content .text-animate {
     position: relative;
     text-align: left;
+    /* text-align: center; */
 }
 
 .home-content .text-animate h3 {
@@ -367,7 +399,12 @@ section {
     margin-bottom: 3rem;
     text-align: center;
 }
-
+#mappa {
+    z-index: 1;
+}
+#mappa .heading {
+    z-index: 2;
+}
 span {
     color: var(--main-color);
 }
@@ -407,6 +444,7 @@ span {
 .about-content {
     max-width: 60%;
     text-align: center;
+    z-index: 1;
 }
 
 .about-content h3 {
@@ -417,6 +455,7 @@ span {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
     text-align: left;
+    z-index: 2;
 }
 
 .btn-box.btns {
@@ -483,10 +522,10 @@ span {
 }
 
 .contact form .input-box {
-    position: relative!important;
-    display: flex!important;
-    justify-content: space-between!important;
-    flex-wrap: wrap!important;
+    position: relative !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    flex-wrap: wrap !important;
 }
 
 .contact form .input-box .input-field {
@@ -552,7 +591,7 @@ span {
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--bg-color);
+    background: var(--second-bg-color);
     z-index: 4;
 }
 
@@ -865,7 +904,7 @@ span {
 
 #SeconHand {
     margin-left: 2rem;
-    background-image: url(https://media.giphy.com/media/a9egkjDwv7QIZQCVnV/giphy.gif?cid=790b7611g1lxnngf6b0vt7bsdt7tfv2j3h0f30a6wfe84loj&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+    background-image: url(https://media.giphy.com/media/l3vQXKPdzpShJtTCE/giphy.gif?cid=ecf05e47rvjs8e7pt393uc3z82m6ghxypn0qbporawaepjlt&ep=v1_gifs_search&rid=giphy.gif&ct=g);
     background-size: cover;
     color: transparent;
     -moz-background-clip: text;
@@ -884,6 +923,7 @@ span {
 }
 
 #mappa {
+    background-color: var(--second-bg-color);
     max-width: 100%;
     width: 100%;
 }
@@ -910,3 +950,66 @@ span {
     opacity: .7;
 }
 
+.rana-plaza {
+    display: flex;
+    justify-content: center;
+    gap: 3rem 1rem;
+    z-index: 1;
+}
+
+.plaza-text {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.rana-plaza {
+    display: flex;
+    justify-content: center;
+    gap: 3rem 1rem;
+    text-align: center;
+}
+
+.rana-plaza p {
+    position: relative;
+    font-size: 1.6rem;
+    margin: 2rem 0 4rem;
+}
+
+.rana-image {
+    max-width: 40%;
+    background-image: url(../images/ranaPlaza4.png);
+    background-repeat: no-repeat;
+    background-size: fill;
+    background-position: center;
+    height: 40vh;
+    border: solid var(--text-color) .3rem;
+    border-radius: 3rem;
+}
+
+.rana-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem 1rem;
+}
+
+@media (max-width:780px) {
+    .col-4 {
+        width: 100%;
+    }
+
+    .rana-image {
+        min-width: 40vh;
+    }
+}
+
+.card-body a {
+    color: var(--bg-color);
+    border: solid var(--main-color) .3rem;
+    transition: 1s;
+}
+.card-body a:hover {
+    color: var(--main-color);
+    border: solid var(--main-color) .3rem;
+}
