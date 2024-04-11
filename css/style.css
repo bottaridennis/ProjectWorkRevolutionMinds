@@ -12,10 +12,26 @@
 }
 
 :root {
-    --bg-color: #225229;
+    /* --bg-color: #225229;
     --second-bg-color: #226131;
     --text-color: #9dd6a7;
-    --main-color: rgb(0, 203, 203);
+    --main-color: rgb(0, 203, 203); */
+
+
+    /* --bg-color: #294B29;
+    --second-bg-color: #50623A;
+    --text-color: #DBE7C9;
+    --main-color: #789461; */
+    
+    --bg-color: #34520D;
+    --second-bg-color: #5F794B  ;
+    --text-color: #EDE7E1;
+    --main-color: #EAC04F;
+    
+    /* --bg-color: #607942;
+    --second-bg-color: #81A862  ;
+    --text-color: #EDE7E1;
+    --main-color: #EAC04F; */
 }
 
 html {
@@ -30,12 +46,14 @@ body {
     height: 100vh;
     /* overflow-x: hidden; */
 }
-#particles-js{
+
+#particles-js {
     height: 100vh;
     position: absolute;
     opacity: .4;
     position: fixed;
-    /* z-index: 2!important; */
+    max-width: 100%;
+    z-index: 0!important;
 }
 
 a {
@@ -116,20 +134,31 @@ section {
     justify-content: center;
     /* flex-shrink: 1; */
     padding: 0 9%;
-    gap: .4rem 2rem;
+    gap: 3rem 2rem;
     max-width: 100% !important;
     background-color: var(--second-bg-color);
 
 }
 
-.shopList {
+/* .shopList {
     display: flex;
     justify-items: center !important;
     align-items: center !important;
-}
+} */
 
 .card {
-    background-color: #225229;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 30rem;
+    height: 35rem
+}
+
+.card div {
+    display: inline-flexbox;
+    /* align-items: center; */
+    justify-content: center;
 }
 
 .card div a {
@@ -330,6 +359,7 @@ section {
     gap: 2rem;
     background: var(--second-bg-color);
     padding-bottom: 6rem;
+    /* z-index: ; */
 }
 
 .heading {
@@ -375,6 +405,7 @@ span {
 }
 
 .about-content {
+    max-width: 60%;
     text-align: center;
 }
 
@@ -385,6 +416,7 @@ span {
 .about-content p {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
+    text-align: left;
 }
 
 .btn-box.btns {
@@ -451,10 +483,10 @@ span {
 }
 
 .contact form .input-box {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    position: relative!important;
+    display: flex!important;
+    justify-content: space-between!important;
+    flex-wrap: wrap!important;
 }
 
 .contact form .input-box .input-field {
@@ -850,6 +882,31 @@ span {
     height: 60vh;
     z-index: 0;
 }
-#shopList{
-    padding-top: 9rem;
+
+#mappa {
+    max-width: 100%;
+    width: 100%;
 }
+
+#shopList {
+    padding-top: 9rem;
+    padding-bottom: 3rem;
+    max-width: 100%;
+    width: 100%;
+}
+
+.img-redirect {
+    display: none;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+}
+
+.card img:hover .img-redirect {
+    display: flex;
+}
+
+.card img:hover img {
+    opacity: .7;
+}
+

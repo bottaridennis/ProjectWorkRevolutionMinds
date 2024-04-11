@@ -47,6 +47,7 @@ var map = L.map('map', {
     center: [45.44437043058254, 10.986797938604902],
     zoom: 14,
     minZoom: 14,
+    scrollWheelZoom: false
 });
 
 var CartoDB_Positron = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
@@ -57,7 +58,7 @@ var CartoDB_Positron = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/
 var greenIcon = L.icon({
     iconUrl: '../images/leaf-red.png',
 
-    iconSize: [15, 38], 
+    iconSize: [15, 38],
 });
 
 var humana = L.marker([45.439657826025446, 10.989385885567623], { icon: greenIcon }).addTo(map);
@@ -81,3 +82,5 @@ bottegaDiGrazia.bindPopup(bottegaDiGraziaText);
 MrGulliver.bindPopup(MrGulliverText);
 fleaSecondHand.bindPopup(fleaSecondHandText);
 mercatinoVintage.bindPopup(mercatinoVintageText);
+
+// var map = new L.map('map', {  });
