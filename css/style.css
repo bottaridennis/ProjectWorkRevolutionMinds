@@ -671,9 +671,71 @@ span {
     }
 }
 
-@media (max-width:1300px) {
+@media (max-width:1500px) {
     .home-imgHover {
         display: none;
+    }
+
+    .header {
+        background: var(--bg-color);
+    }
+
+    .education-column {
+        width: 100%;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar1 {
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        padding: 1rem 4%;
+        background: var(--main-color);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        z-index: 1;
+        transition: .25s ease;
+        transition-delay: .25s;
+    }
+
+    .navbar1.active {
+        transition-delay: 0s;
+        left: 0;
+    }
+
+    .navbar1 .active-nav {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        z-index: -1;
+        transition: .25s ease;
+        transition-delay: 0s;
+    }
+
+    .navbar1.active .active-nav {
+        left: 0;
+        transition-delay: .25s;
+    }
+
+    .navbar1 a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        transform: translateX(-20rem);
+        transition: .25s ease;
+        transition-delay: 0s;
+    }
+
+    .navbar1.active a {
+        transform: translateX(0);
+        transition-delay: .25s;
     }
 }
 
