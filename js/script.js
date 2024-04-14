@@ -67,7 +67,7 @@ var bottegaDiGrazia = L.marker([45.44006793835619, 10.984590379628921], { icon: 
 var MrGulliver = L.marker([45.43955768815567, 10.989024466271093], { icon: greenIcon }).addTo(map);
 var fleaSecondHand = L.marker([45.4432570309139, 11.0202712744057], { icon: greenIcon }).addTo(map);
 var mercatinoVintage = L.marker([45.435861814640454, 10.985868162274183], { icon: greenIcon }).addTo(map);
-map.setMaxBounds(map.getBounds());
+// map.setMaxBounds(map.getBounds());
 
 const babyBazarText = "<h1><b style='font-size: 1.7rem;'>Baby bazar Verona</b></h1><br><p style='font-size: 1.5rem;'>via: C.so Milano, 114/A, 37138 Verona VR</p><br><a style=' cursor: pointer; font-size: 1.5rem;' href='https://www.google.com/maps/place/BABYBAZAR+Verona+Borgo+Milano/@45.4461306,10.9485627,16z/data=!3m1!4b1!4m6!3m5!1s0x4781e18d2150b701:0x20497d3b6940330a!8m2!3d45.4461307!4d10.9534336!16s%2Fg%2F11b6gdhy9f?entry=ttu' target='_blank'>Maps</a>";
 const humanaText = "<h1><b style='font-size: 1.7rem;'>Humana store</b></h1><br><p style='font-size: 1.5rem;'>Piazza Pasque Veronesi, 5a, 37121 Verona VR</p><br><a style=' cursor: pointer; font-size: 1.5rem;' href='https://www.google.com/maps/place/Humana+Vintage+Verona/@45.4396354,10.9868134,17z/data=!3m1!4b1!4m6!3m5!1s0x477f5f908225e553:0x49a1d337c799e083!8m2!3d45.4396354!4d10.9893883!16s%2Fg%2F11p0w66v07?entry=ttu' target='_blank'>Maps</a>";

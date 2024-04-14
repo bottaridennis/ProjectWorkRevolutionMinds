@@ -12,26 +12,26 @@
 }
 
 :root {
-    /* --bg-color: #225229;
+    --bg-color: #225229;
     --second-bg-color: #226131;
     --text-color: #9dd6a7;
-    --main-color: rgb(0, 203, 203); */
+    --main-color: rgb(0, 203, 203);
 
 
     /* --bg-color: #294B29;
     --second-bg-color: #50623A;
     --text-color: #DBE7C9;
-    --main-color: #789461; */
+    --main-color:rgb(0, 203, 203) */
 
     /* --bg-color: #34520D;
     --second-bg-color: #5F794B;
     --text-color: #EDE7E1;
     --main-color: #EAC04F; */
 
-    --bg-color: #248BC7;
+    /* --bg-color: #248BC7;
     --second-bg-color: #2398D1;
     --text-color: #FFFFFF;
-    --main-color: #F6DE62;
+    --main-color: #F6DE62; */
 
     /* --bg-color: #607942;
     --second-bg-color: #81A862  ;
@@ -180,20 +180,21 @@ section {
     font-size: 1.3rem;
 }
 
-.card-img-top{
+.card-img-top {
     opacity: 1;
     transition: 1s;
     cursor: pointer;
 }
 
-.card-img-top:hover{
+.card-img-top:hover {
     opacity: .5;
 }
-.redirect i{
+
+.redirect i {
     display: none;
 }
 
-.redirect:hover  i{
+.redirect:hover i {
     display: flex;
     position: absolute;
     justify-content: center;
@@ -224,8 +225,10 @@ section {
 }
 
 .home-content .text-animate {
-    position: relative;
-    text-align: left;
+    /* position: relative; */
+    text-align: center;
+    /* padding-top: 4rem; */
+    margin-top: 10rem;
     /* text-align: center; */
 }
 
@@ -323,11 +326,12 @@ section {
 }
 
 .home-sci {
-    position: absolute;
+    /* position: absolute;
     bottom: 1rem;
     width: 250px;
+    justify-content: space-between; */
     display: flex;
-    justify-content: space-between;
+    gap: 2rem;
     padding-top: 3rem;
 }
 
@@ -398,13 +402,17 @@ section {
     font-size: 5rem;
     margin-bottom: 3rem;
     text-align: center;
+    z-index: 4;
 }
+
 #mappa {
-    z-index: 1;
+    /* z-index: 2; */
 }
+
 #mappa .heading {
-    z-index: 2;
+    z-index: 3;
 }
+
 span {
     color: var(--main-color);
 }
@@ -726,6 +734,7 @@ span {
         justify-content: center;
         align-items: center;
         text-align: center;
+        font-size: 5em;
     }
 
     .secondHand {
@@ -735,6 +744,10 @@ span {
 
     .text-animate {
         width: 100%;
+    }
+
+    #SeconHand {
+        font-size: 4rem;
     }
 }
 
@@ -872,7 +885,7 @@ span {
     }
 
     .home-content h1 {
-        font-size: 5rem;
+        font-size: 1rem;
     }
 }
 
@@ -910,7 +923,7 @@ span {
     -moz-background-clip: text;
     -webkit-background-clip: text;
     text-transform: uppercase;
-    font-size: 70px;
+    font-size: 6rem;
 }
 
 .color2 {
@@ -1009,6 +1022,7 @@ span {
     border: solid var(--main-color) .3rem;
     transition: 1s;
 }
+
 .card-body a:hover {
     color: var(--main-color);
     border: solid var(--main-color) .3rem;
