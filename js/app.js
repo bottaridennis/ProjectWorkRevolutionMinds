@@ -36,7 +36,7 @@ particlesJS('particles-js',
         },
         "image":
         {
-          "src": "../images/wite-shirt.png",
+          "src": "",
           "width": 100,
           "height": 100
         },
@@ -53,17 +53,17 @@ particlesJS('particles-js',
         }
       },
       "size": {
-        "value": 7,
+        "value": 10,
         "random": true,
         "anim": {
           "enable": false,
           "speed": 4,
-          "size_min": 0.3,
+          "size_min": 4,
           "sync": false
         }
       },
       "line_linked": {
-        "enable": true,
+        "enable": false,
         "distance": 150,
         "color": "#ffffff",
         "opacity": 0.4,
