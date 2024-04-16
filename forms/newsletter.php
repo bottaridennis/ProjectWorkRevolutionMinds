@@ -19,10 +19,16 @@
         $name = filter_var($_POST["name"], FILTER_SANITIZE_STRING);
         $surname = filter_var($_POST["surname"], FILTER_SANITIZE_STRING);
         $mail = filter_var($_POST["mail"], FILTER_SANITIZE_EMAIL);
+        // $check = $_POST["privacyAcceptance"];
+        if ( isset($_POST['privacyAcceptance']) ) {
+            $check = 1;
+        } else { 
+            $check = 0;
+        }
 
         //query che inserisce i dati nel database
-        $query_sql = "INSERT INTO newsletter (personName, surname, mail)
-                    VALUES ('$name', '$surname', '$mail');";
+        $query_sql = "INSERT INTO newsletter (personName, surname, mail, privacyCheck)
+                    VALUES ('$name', '$surname', '$mail', $check);";
         
         //eseguo la query
         $result = $conn->query($query_sql);
