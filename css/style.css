@@ -227,6 +227,7 @@ section {
 }
 .carousel-secondhand{
     max-height: 10vh!important;
+    position: relative;
 }
 .home-content h1 span {
     color: var(--text-color);
@@ -276,7 +277,7 @@ section {
     justify-content: center;
     /* align-items: center; */
     max-width: 90%;
-    /* max-height: 40vh; */
+    max-height: 40vh;
     width: 70%;
     /* height: 40vh; */
 }
