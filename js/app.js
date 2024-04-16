@@ -36,7 +36,7 @@ particlesJS('particles-js',
         },
         "image":
         {
-          "src": "",
+          "src": "../images/wite-shirt.png",
           "width": 100,
           "height": 100
         },

@@ -429,6 +429,8 @@ span {
 
 .about-img img {
     width: 90%;
+    width: 18rem;
+    height: 18rem;
     border-radius: 50%;
     border: .2rem solid var(--main-color);
 
