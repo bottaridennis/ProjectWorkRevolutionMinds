@@ -16,7 +16,7 @@ particlesJS('particles-js',
   {
     "particles": {
       "number": {
-        "value": 100,
+        "value": 30,
         "density": {
           "enable": true,
           "value_area": 800
@@ -36,7 +36,7 @@ particlesJS('particles-js',
         },
         "image":
         {
-          "src": "../images/wite-shirt.png",
+          "src": "../images/Group.png",
           "width": 100,
           "height": 100
         },
@@ -53,12 +53,12 @@ particlesJS('particles-js',
         }
       },
       "size": {
-        "value": 10,
+        "value": 12,
         "random": true,
         "anim": {
-          "enable": false,
+          "enable": true,
           "speed": 4,
-          "size_min": 4,
+          "size_min": 5,
           "sync": false
         }
       },

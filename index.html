@@ -39,7 +39,7 @@
     <!-- Particelle -->
 
     <section class="about" id="about">
-        <div id="particles-js"></div>
+        <!-- <div id="particles-js"></div> -->
         <div class="text-animate">
             <div class="title">
                 <h1 id="SeconHand">#SecondHand</h1>
@@ -286,49 +286,50 @@
     </section>
 
     <section class="home show-animate container-fluid" id="home">
-
         <div class="home-content row">
-            <h1 class="">Ciao, siamo i <span>Revolution Minds</span></h1>
-            <p>Siamo 5 studenti presso l'ITS di Web Development e abbiamo l'ambizione di creare un impatto positivo
-                nella
-                nostra comunità. Il nostro obiettivo è quello di evidenziare l'importanza di <b><span
-                        style="color: var(--main-color);">ridurre l'impatto
-                        ambientale</span></b> legato all'<b><span style="color: var(--main-color);">industria della
-                        moda</span></b>, spesso caratterizzata da produzioni inquinanti e spreco di
-                risorse, in particolare, ci concentreremo sulla sensibilizzazione riguardo all'acquisto da <b><span
-                        style="color: var(--main-color);">negozi
-                        dell'usato</span></b> anziché da aziende fast fashion, le cui pratiche possono essere
-                dannose
-                per l'ambiente e per
-                le condizioni di lavoro dei lavoratori del settore.
-            </p>
-            <div class="btn-box">
-                <a href="#about" class="btn">Idea</a>
-                <a href="contact.html" class="btn">Contattaci</a>
+            <div class="col-6">
+                <h1 class="heading">Ciao, siamo i <span style="color: var(--main-color);">Revolution Minds</span></h1>
+                <p>Siamo 5 studenti presso l'ITS di Web Development e abbiamo l'ambizione di creare un impatto positivo
+                    nella
+                    nostra comunità. Il nostro obiettivo è quello di evidenziare l'importanza di <b><span
+                            style="color: var(--main-color);">ridurre l'impatto
+                            ambientale</span></b> legato all'<b><span style="color: var(--main-color);">industria della
+                            moda</span></b>, spesso caratterizzata da produzioni inquinanti e spreco di
+                    risorse, in particolare, ci concentreremo sulla sensibilizzazione riguardo all'acquisto da <b><span
+                            style="color: var(--main-color);">negozi
+                            dell'usato</span></b> anziché da aziende fast fashion, le cui pratiche possono essere
+                    dannose
+                    per l'ambiente e per
+                    le condizioni di lavoro dei lavoratori del settore.
+                </p>
+                <div class="btn-box">
+                    <a href="#about" class="btn">Idea</a>
+                    <a href="contact.html" class="btn">Contattaci</a>
+                </div>
+                <div class="home-sci">
+                    <a href="https://github.com/"><i class='bx bxl-github'></i></a>
+                    <a href=""><i class='bx bxl-gmail'></i></a>
+                    <a href=""><i class='bx bxl-instagram'></i></a>
+                    <!-- <span class="animate" style="--i:6;"></span> -->
+                </div>
             </div>
-            <div class="home-sci">
-                <a href="https://github.com/"><i class='bx bxl-github'></i></a>
-                <a href=""><i class='bx bxl-gmail'></i></a>
-                <a href=""><i class='bx bxl-instagram'></i></a>
-                <!-- <span class="animate" style="--i:6;"></span> -->
+            <div class="col-6">
+                <div class="home-imgHover ">
+                    <video src="./Videos/FastFashion.mp4" controls autoplay loop muted></video>
+                </div>
             </div>
         </div>
-
-
-
-        <div class="home-imgHover">
-            <video src="./Videos/FastFashion.mp4" controls autoplay loop muted></video>
-        </div>
-        <span class="animate home-img" style="--i:7;"></span>
+        <!-- <span class="animate home-img" style="--i:7;"></span> -->
     </section>
 
     <section class="rana-plaza" id="rana-plaza">
         <div class="row rana-plaza ">
+            <h1 class="heading">Cosa sucecede nel <span>mondo</span></h1>
             <div class="rana-image"></div>
             <div class="row">
                 <h3 class="plaza-content">Cos'è successo al <span>Rana Plaza</span></h3>
                 <div class="plaza-text rana-content">
-                    <p>
+                    <p id="rana-text">
                         Il <span>Rana Plaza</span> è stato un evento tragico che ha sconvolto l'industria della moda.
                         Situato in Bangladesh, il complesso commerciale ospitava numerose fabbriche di abbigliamento,
                         molte
@@ -344,13 +345,44 @@
         </div>
     </section>
 
+    <section>
+        <div>
+            <h1 class="heading">Notizie sul <span>second hand</span></h1>
+            <div class="carousel-secondhand row">
+                <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
+                    <div id="carouselExample" class="carousel ">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/humana.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/gulliver.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/grazia.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </section>
+
     <footer class="footer">
         <div class="footer-text">
             <p>Made by Dennis Bottari, Yasmine Giuliani, Matteo Leto, Fabian Dumea e Diego Milli</p>
         </div>
-        <div class="footer-iconTop">
+        <!-- <div class="footer-iconTop"> -->
     </footer>
-
 </body>
 
 
