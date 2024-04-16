@@ -280,6 +280,7 @@ section {
     max-height: 40vh;
     width: 70%;
     /* height: 40vh; */
+    
 }
 .carousel-secondhand {
     /* max-width: 90%; */
@@ -578,6 +579,10 @@ span {
     position: relative;
     width: 49%;
     margin: .8rem 0;
+}
+.rana-content{
+    display: flex;
+    justify-content: space-between;
 }
 
 .contact form .input-box .input-field input,
