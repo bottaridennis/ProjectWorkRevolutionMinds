@@ -171,6 +171,7 @@ section {
     justify-content: center;
 }
 
+
 .card div a {
     background-color: var(--main-color);
 }
@@ -1131,6 +1132,7 @@ span {
     max-width: 100%;
     width: 100%;
 }
+
 
 .img-redirect {
     display: none;
