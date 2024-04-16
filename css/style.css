@@ -1214,3 +1214,22 @@ span {
     color: var(--main-color);
     border: solid var(--main-color) .3rem;
 }
+
+.label{
+    float: left !important;
+    text-align: left!important;
+}
+.label label{
+    margin-left: 1rem!important;
+    font-size: 1.3rem;
+}
+.label label a{
+    color: var(--main-color)!important;
+    font-weight: bold;
+}
+.privacy{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
