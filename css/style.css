@@ -1106,11 +1106,13 @@ span {
 #SeconHand {
     margin-left: 2rem;
     margin-top: 0.5em;
-    background-image: url(https://media.giphy.com/media/l3vQXKPdzpShJtTCE/giphy.gif?cid=ecf05e47rvjs8e7pt393uc3z82m6ghxypn0qbporawaepjlt&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+    background-image: url("https://media.giphy.com/media/1fBDr6PkgSznVtOsEY/giphy.gif?cid=ecf05e47k9vxks5gyt5rqbftg77su1c802aq5tbj8gwzn62d&ep=v1_gifs_search&rid=giphy.gif&ct=g");
     background-size: cover;
     color: transparent;
     -moz-background-clip: text;
     -webkit-background-clip: text;
+    -webkit-text-stroke-color: var(--text-color);
+    -webkit-text-stroke:var(--main-color    ) .1rem;
     text-transform: uppercase;
     font-size: 5rem;
     z-index: 3;
