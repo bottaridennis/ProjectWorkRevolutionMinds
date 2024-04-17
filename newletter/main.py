@@ -48,7 +48,7 @@ def getDataFromDatabase(cursor, columnName, tableName):
 
 #def sendMail(mailList, titleList, newsList): *** problemi con ascii
 def sendMail(mailList, object, content):
-    endMail = "\nTeam Revolution Minds"
+    endMail = "\n\nTeam Revolution Minds"
 
     message = object + content + endMail #creazione messaggio
 
