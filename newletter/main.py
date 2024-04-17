@@ -47,12 +47,10 @@ def getDataFromDatabase(cursor, columnName, tableName):
     return list
 
 #def sendMail(mailList, titleList, newsList): *** problemi con ascii
-def sendMail(mailList, titleList, newsList, object, content):
+def sendMail(mailList, object, content):
+    endMail = "\nTeam Revolution Minds"
 
-    # object = titleList[1]['title']  #titolo della mail    ***
-    # content = newsList[1]['content']  ***
-
-    message = object + content #creazione messaggio
+    message = object + content + endMail #creazione messaggio
 
     mitt = mail['mail']
     psw = mail['psw']
@@ -92,12 +90,11 @@ def main():
         #     print(row['content'])
 
         #invio delle mail a tutti le mail presenti nel database
-        # sendMail(mailList, titleList, newsList)   ***
+        title = input("Inserisci il titolo della mail: ")
+        object = title + "\n\n"
+        content = input("Inserisci il contenuto della mail: ")
 
-        object = "News 1\n\n"
-        content = "La newsletter(Beta) sul second hand di Revolution Minds e' operativa"
-
-        sendMail(mailList, titleList, newsList, object, content)
+        sendMail(mailList, object, content)
 
 
         print("\nMail inviate")
