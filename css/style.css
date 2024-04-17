@@ -162,7 +162,10 @@ section {
     justify-content: center;
     /* align-items: center; */
     width: 30rem;
-    height: 35rem
+    max-height: 36rem;
+    border: 0;
+    box-shadow: 0px 2px color(srgb-linear red green blue);
+
 }
 
 .card div {
@@ -227,7 +230,6 @@ section {
 }
 
 .carousel-secondhand {
-    /* max-height: 10vh!important; */
     position: relative;
 }
 
@@ -278,16 +280,13 @@ section {
 .carousel {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     max-width: 90%;
     max-height: 40vh;
     width: 70%;
-    /* height: 40vh; */
 
 }
 
 .carousel-secondhand {
-    /* max-width: 90%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -324,10 +323,11 @@ section {
 .btnn-box {
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 34.5rem;
     height: 5rem;
     margin-bottom: 4rem;
+    width: 100%;
 }
 
 .btnn-box .btn {
@@ -383,6 +383,7 @@ section {
     width: 100%;
 }
 
+/* .btn{} */
 .home-sci {
     /* position: absolute;
     bottom: 1rem;
@@ -624,8 +625,9 @@ span {
 }
 
 .rana-content {
-    /* display: flex; */
-    /* justify-content: space-between; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact form .input-box .input-field input,
@@ -928,6 +930,9 @@ span {
     }
 }
 
+#rana-text {
+    text-align: left;
+}
 
 @media (max-width: 768px) {
     .header {
@@ -1132,6 +1137,10 @@ span {
     }
 }
 
+#btn-home {
+    /* padding-top: 3rem; */
+    margin-top: 3rem;
+}
 
 
 @keyframes aboutSpinner {
@@ -1168,7 +1177,7 @@ span {
     -moz-background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-stroke-color: var(--text-color);
-    -webkit-text-stroke: var(--main-color) .1rem;
+    /* -webkit-text-stroke: var(--main-color) .2rem; */
     text-transform: uppercase;
     font-size: 5rem;
     z-index: 3;
@@ -1225,8 +1234,6 @@ span {
 }
 
 .plaza-text {
-    /* display: flex; */
-    /* justify-content: center; */
     z-index: 1;
 }
 
@@ -1234,7 +1241,6 @@ span {
     position: relative;
     max-width: 60%;
     font-size: 1.6rem;
-    /* margin: 2rem 0 4rem; */
 }
 
 .rana-image {
@@ -1250,9 +1256,7 @@ span {
 
 .rana-content {
     display: flex;
-    justify-content: space-around;
-    /* align-items: center; */
-    /* gap: 3rem 1rem; */
+    width: 100%;
 }
 
 @media (max-width:780px) {
@@ -1267,6 +1271,12 @@ span {
 
     .heading {
         font-size: 4rem;
+    }
+
+    #rana-text {
+        font-size: 1.5rem;
+        text-align: left;
+        width: 100%;
     }
 }
 
