@@ -317,6 +317,35 @@ section {
     transition: .5s;
 }
 
+.btnn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 34.5rem;
+    height: 5rem;
+    margin-bottom: 4rem;
+}
+
+.btnn-box .btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 100%;
+    background: var(--main-color);
+    border: solid .2rem var(--main-color);
+    border-radius: .8rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: var(--bg-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+
 .btn-box .btn:hover {
     color: var(--main-color);
 }
@@ -431,7 +460,7 @@ section {
 
 .heading {
     font-size: 5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     text-align: center;
     z-index: 4;
 }
@@ -452,6 +481,7 @@ span {
     position: relative;
     width: 20rem;
     height: 20rem;
+    margin-bottom: 1.5rem;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -499,13 +529,21 @@ span {
     z-index: 2;
 }
 
+.btn-box .btn{
+    margin-top: 1em;
+    width: 21em;
+    height: 2.5em;
+}
+
 .btn-box.btns {
-    display: inline-block;
+    display: contents;
     width: 15rem;
+    margin-top: 1.5em;
 }
 
 .btn-box.btns a::before {
     background: var(--second-bg-color);
+
 }
 
 .map {
@@ -1106,6 +1144,7 @@ span {
 #SeconHand {
     margin-left: 2rem;
     margin-top: 0.5em;
+    /* background-image: url("https://media.giphy.com/media/MFnBUPu3XscriCIhWi/giphy.gif"); */
     background-image: url("https://media.giphy.com/media/1fBDr6PkgSznVtOsEY/giphy.gif?cid=ecf05e47k9vxks5gyt5rqbftg77su1c802aq5tbj8gwzn62d&ep=v1_gifs_search&rid=giphy.gif&ct=g");
     background-size: cover;
     color: transparent;
@@ -1221,7 +1260,8 @@ span {
 
 .card-body a:hover {
     color: var(--main-color);
-    border: solid var(--main-color) .3rem;
+    border: solid var(--main-color) .3rem;
+
 }
 
 .label{
