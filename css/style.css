@@ -1150,6 +1150,8 @@ span {
     color: transparent;
     -moz-background-clip: text;
     -webkit-background-clip: text;
+    -webkit-text-stroke-color: var(--text-color);
+    -webkit-text-stroke:var(--main-color    ) .1rem;
     text-transform: uppercase;
     font-size: 5rem;
     z-index: 3;
