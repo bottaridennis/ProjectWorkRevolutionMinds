@@ -226,7 +226,7 @@ section {
     line-height: 1.3;
 }
 .carousel-secondhand{
-    max-height: 10vh!important;
+    /* max-height: 10vh!important; */
     position: relative;
 }
 .home-content h1 span {
@@ -280,6 +280,7 @@ section {
     max-height: 40vh;
     width: 70%;
     /* height: 40vh; */
+    
 }
 .carousel-secondhand {
     /* max-width: 90%; */
@@ -616,6 +617,10 @@ span {
     position: relative;
     width: 49%;
     margin: .8rem 0;
+}
+.rana-content{
+    /* display: flex; */
+    /* justify-content: space-between; */
 }
 
 .contact form .input-box .input-field input,
@@ -1174,6 +1179,8 @@ span {
 }
 
 
+
+
 .img-redirect {
     display: none;
     position: absolute;
@@ -1199,8 +1206,8 @@ span {
 }
 
 .plaza-text {
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
     z-index: 1;
 }
 
@@ -1225,8 +1232,8 @@ span {
 .rana-content {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    gap: 3rem 1rem;
+    /* align-items: center; */
+    /* gap: 3rem 1rem; */
 }
 
 @media (max-width:780px) {
@@ -1252,4 +1259,24 @@ span {
 .card-body a:hover {
     color: var(--main-color);
     border: solid var(--main-color) .3rem;
+
+}
+
+.label{
+    float: left !important;
+    text-align: left!important;
+}
+.label label{
+    margin-left: 1rem!important;
+    font-size: 1.3rem;
+}
+.label label a{
+    color: var(--main-color)!important;
+    font-weight: bold;
+}
+.privacy{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
 }

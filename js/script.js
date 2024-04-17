@@ -76,6 +76,9 @@ var secondamano = L.marker([45.25388331210874, 11.127796840479187], { icon: gree
 var minime = L.marker([45.34956063139137, 10.879336180963955], { icon: greenIcon }).addTo(map);
 var usariusa = L.marker([45.43477895959975, 11.011583165626266], { icon: greenIcon }).addTo(map);
 var ghedetuto = L.marker([45.40290419383276, 11.02220673493933], { icon: greenIcon }).addTo(map);
+var secondamanina = L.marker([45.439279079446486, 11.100865920596746], { icon: greenIcon }).addTo(map);
+var mercato = L.marker([45.40837395195338, 10.980803330685113], { icon: greenIcon }).addTo(map);
+
 
 const babyBazarText = "<h1><b style='font-size: 1.7rem;'>Baby bazar Verona</b></h1><br><p style='font-size: 1.5rem;'>via: C.so Milano, 114/A, 37138 Verona VR</p><br><a style=' cursor: pointer; font-size: 1.5rem;' href='https://www.google.com/maps/place/BABYBAZAR+Verona+Borgo+Milano/@45.4461306,10.9485627,16z/data=!3m1!4b1!4m6!3m5!1s0x4781e18d2150b701:0x20497d3b6940330a!8m2!3d45.4461307!4d10.9534336!16s%2Fg%2F11b6gdhy9f?entry=ttu' target='_blank'>Maps</a>";
 const humanaText = "<h1><b style='font-size: 1.7rem;'>Humana store</b></h1><br><p style='font-size: 1.5rem;'>Piazza Pasque Veronesi, 5a, 37121 Verona VR</p><br><a style=' cursor: pointer; font-size: 1.5rem;' href='https://www.google.com/maps/place/Humana+Vintage+Verona/@45.4396354,10.9868134,17z/data=!3m1!4b1!4m6!3m5!1s0x477f5f908225e553:0x49a1d337c799e083!8m2!3d45.4396354!4d10.9893883!16s%2Fg%2F11p0w66v07?entry=ttu' target='_blank'>Maps</a>";
@@ -91,6 +94,9 @@ const secondamanoText = " <h1><b style='font-size: 1.7rem;'>Mercatino Usato Bimb
 const minimeText = " <h1><b style='font-size: 1.7rem;'>	Minimè</b></h1><br><p style='font-size: 1.5rem;'>Via Pompei, 8A, 37064 Povegliano Veronese VR</p><br><a style=' cursor: pointer; font-size: 1.5rem;'href='	https://www.google.com/maps/place/Minimè/@45.3494211,10.8768042,17z/data=!3m2!4b1!5s0x4781de59b770ac6f:0x8089d288b4171099!4m6!3m5!1s0x4781df091a1e15e1:0x338bc529a8844523!8m2!3d45.3494174!4d10.8793791!16s%2Fg%2F11sm_ns0rx?hl=it&entry=ttu'	 target='_blank'>	Maps	</a>";
 const usariusaText = " <h1><b style='font-size: 1.7rem;'>mercatino usato Usa e Riusa</b></h1><br><p style='font-size: 1.5rem;'>	Via Nicolò Giolfino, 2, 37133 Verona VR	</p><br><a style=' cursor: pointer; font-size: 1.5rem;'href='	https://www.google.com/maps/place/mercatino+usato+Usa+e+Riusa/@45.4345493,11.0090941,17z/data=!3m1!4b1!4m6!3m5!1s0x477f5f24b824bfcd:0xcb475fc855d04322!8m2!3d45.4345456!4d11.011669!16s%2Fg%2F1tw_m25z?hl=it&entry=ttu'	 target='_blank'>	Maps	</a>";
 const ghedetutoText = " <h1><b style='font-size: 1.7rem;'>Mercatino dell'usato Ghedetuto </b></h1><br><p style='font-size: 1.5rem;'> Strada Corte Garofolo, 10, 37057 Verona VR	</p><br><a style=' cursor: pointer; font-size: 1.5rem;'href='	https://www.google.com/maps/place/Mercatino+dell'usato+Ghedetuto+OPERAZIONE+MATO+GROSSO/@45.4027196,11.0198035,17z/data=!3m1!4b1!4m6!3m5!1s0x477f5e5a7499bfef:0xb8092bf97f0ae5b4!8m2!3d45.4027159!4d11.0223784!16s%2Fg%2F11bwh5rqml?hl=it&entry=ttu'	 target='_blank'>	Maps	</a>";
+const secondamaninaText = " <h1><b style='font-size: 1.7rem;'>	SECONDAMANINA Est	</b></h1><br><p style='font-size: 1.5rem;'>	Via Adamello, 8/D, 37036 San Martino Buon Albergo VR	</p><br><a style=' cursor: pointer; font-size: 1.5rem;' href='	https://www.google.com/maps/place/Secondamanina+Verona/@45.4081947,10.8262077,11z/data=!4m10!1m2!2m1!1sSecondamanina+Mercatino+Usato+Bimbi!3m6!1s0x477f5f71e9554b5b:0xe6b9f78a694269b4!8m2!3d45.4256064!4d11.1002097!15sCiNTZWNvbmRhbWFuaW5hIE1lcmNhdGlubyBVc2F0byBCaW1iaSIDiAEBWiUiI3NlY29uZGFtYW5pbmEgbWVyY2F0aW5vIHVzYXRvIGJpbWJpkgEFc3RvcmXgAQA!16s%2Fg%2F1hc28_tql?entry=ttu	 target='_blank'>	Maps	</a>";
+const mercatoText = " <h1><b style='font-size: 1.7rem;'>	Mercatino Usato Verona	</b></h1><br><p style='font-size: 1.5rem;'>	Via Angelo Messedaglia, 8 b, 37135 Verona VR	</p><br><a style=' cursor: pointer; font-size: 1.5rem;' href='	https://www.google.com/maps/place/Mercatino+usato+verona/@45.4080576,10.9807175,15z/data=!4m6!3m5!1s0x477f5fc321a5187f:0x3757f24c81763a4c!8m2!3d45.4079256!4d10.9806489!16s%2Fg%2F11h3c48vgz?entry=ttu	 target='_blank'>	Maps	</a>";
+
 
 babyBazar.bindPopup(babyBazarText);
 humana.bindPopup(humanaText);
@@ -107,7 +113,8 @@ secondamano.bindPopup(secondamanoText);
 minime.bindPopup(minimeText);
 usariusa.bindPopup(usariusaText);
 ghedetuto.bindPopup(ghedetutoText);
-
+secondamanina.bindPopup(secondamaninaText);
+mercato.bindPopup(mercatoText);
 
 
 
