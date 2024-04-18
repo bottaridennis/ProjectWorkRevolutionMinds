@@ -1,5 +1,5 @@
 <link rel="shortcut icon" href="./images/Logo.png" type="image/x-icon">
-<link rel="stylesheet" href="./css/style.css">
+<!-- <link rel="stylesheet" href="../css/style.css"> -->
 <link rel="stylesheet" href="./messageStyle.css">
 
 <!-- box icons -->

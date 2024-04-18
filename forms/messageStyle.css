@@ -1,11 +1,22 @@
+:root {
+    --bg-color: #225229;
+    --second-bg-color: #226131;
+    --text-color: #9dd6a7;
+    --main-color: rgb(0, 203, 203);
+}
+
 *{
     margin: 0;
     padding: 0;
-    background-color: var(--main-color);
+    /* background-color: var(--main-color); */
 }
 body{
     margin: 0;
+    background-image: url('../images/45-degree-fabric-light.png');
+    background-repeat: repeat;
+    background-color: var(--bg-color);
 }
+
 .message{
     display: flex;
     justify-content: center;

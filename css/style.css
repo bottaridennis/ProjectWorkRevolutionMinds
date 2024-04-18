@@ -325,7 +325,8 @@ section {
 .btnn-box {
     position: relative;
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-between; */
+    gap: 4rem;
     width: 34.5rem;
     height: 5rem;
     margin-bottom: 4rem;
@@ -854,6 +855,10 @@ span {
     html {
         font-size: 55%;
     }
+
+    .btnn-box {
+        justify-content: space-around;
+    }
 }
 
 @media (max-width:991px) {
@@ -1141,6 +1146,7 @@ span {
 
 #btn-home {
     /* padding-top: 3rem; */
+    justify-content: center!important;
     margin-top: 3rem;
 }
 
